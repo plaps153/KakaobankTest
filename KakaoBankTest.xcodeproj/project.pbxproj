@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27B9C5D1FE9E9028B3FA466E /* Pods_KakaoBankTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AB69167CAD055CDD9BBE057 /* Pods_KakaoBankTest.framework */; };
+		773C0D5A245050F100840C2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D59245050F100840C2B /* AppDelegate.swift */; };
+		773C0D5C245050F100840C2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D5B245050F100840C2B /* SceneDelegate.swift */; };
+		773C0D5E245050F100840C2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D5D245050F100840C2B /* ViewController.swift */; };
+		773C0D61245050F100840C2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773C0D5F245050F100840C2B /* Main.storyboard */; };
+		773C0D63245050F700840C2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773C0D62245050F700840C2B /* Assets.xcassets */; };
+		773C0D66245050F700840C2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773C0D64245050F700840C2B /* LaunchScreen.storyboard */; };
+		773C0D6F24505A4100840C2B /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D6E24505A4100840C2B /* R.generated.swift */; };
+		773C0D7124505A7600840C2B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D7024505A7600840C2B /* ResultViewController.swift */; };
+		773C0D7424505B3B00840C2B /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D7324505B3B00840C2B /* SearchResultTableViewCell.swift */; };
+		773C0D772451117C00840C2B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D762451117C00840C2B /* NetworkManager.swift */; };
+		773C0D7A24511D8800840C2B /* SearchResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D7924511D8800840C2B /* SearchResultModel.swift */; };
+		773C0D7D2451510D00840C2B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773C0D7C2451510D00840C2B /* ViewModel.swift */; };
+		7763ABA82452FFD40086FBF5 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7763ABA72452FFD40086FBF5 /* Parser.swift */; };
+		7763ABAA245306170086FBF5 /* RatingStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7763ABA9245306170086FBF5 /* RatingStackView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CE3756D41D2EF2FD140DCFC /* Pods-KakaoBankTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoBankTest.debug.xcconfig"; path = "Target Support Files/Pods-KakaoBankTest/Pods-KakaoBankTest.debug.xcconfig"; sourceTree = "<group>"; };
+		3AB69167CAD055CDD9BBE057 /* Pods_KakaoBankTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaoBankTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		773C0D56245050F100840C2B /* KakaoBankTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KakaoBankTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		773C0D59245050F100840C2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		773C0D5B245050F100840C2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		773C0D5D245050F100840C2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		773C0D60245050F100840C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		773C0D62245050F700840C2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		773C0D65245050F700840C2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		773C0D67245050F700840C2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773C0D6E24505A4100840C2B /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = R.generated.swift; path = KakaoBankTest/Etc/R.generated.swift; sourceTree = SOURCE_ROOT; };
+		773C0D7024505A7600840C2B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		773C0D7324505B3B00840C2B /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		773C0D762451117C00840C2B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		773C0D7924511D8800840C2B /* SearchResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultModel.swift; sourceTree = "<group>"; };
+		773C0D7C2451510D00840C2B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		7763ABA72452FFD40086FBF5 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		7763ABA9245306170086FBF5 /* RatingStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingStackView.swift; sourceTree = "<group>"; };
+		E4A3F4B1C787BCC7BF6A274B /* Pods-KakaoBankTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaoBankTest.release.xcconfig"; path = "Target Support Files/Pods-KakaoBankTest/Pods-KakaoBankTest.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		773C0D53245050F100840C2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B9C5D1FE9E9028B3FA466E /* Pods_KakaoBankTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FCB51C7CD444AEC61CBE988 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CE3756D41D2EF2FD140DCFC /* Pods-KakaoBankTest.debug.xcconfig */,
+				E4A3F4B1C787BCC7BF6A274B /* Pods-KakaoBankTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		773C0D4D245050F100840C2B = {
+			isa = PBXGroup;
+			children = (
+				773C0D58245050F100840C2B /* KakaoBankTest */,
+				773C0D57245050F100840C2B /* Products */,
+				0FCB51C7CD444AEC61CBE988 /* Pods */,
+				DF8C7B627CD1870F46937176 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		773C0D57245050F100840C2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				773C0D56245050F100840C2B /* KakaoBankTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		773C0D58245050F100840C2B /* KakaoBankTest */ = {
+			isa = PBXGroup;
+			children = (
+				7763ABAB245319070086FBF5 /* Etc */,
+				7763ABA62452FFB90086FBF5 /* Util */,
+				773C0D7B245150FD00840C2B /* ViewModel */,
+				773C0D7824511D7B00840C2B /* Model */,
+				773C0D75245110C100840C2B /* Network */,
+				773C0D7224505B1800840C2B /* View */,
+				773C0D5F245050F100840C2B /* Main.storyboard */,
+				773C0D62245050F700840C2B /* Assets.xcassets */,
+				773C0D64245050F700840C2B /* LaunchScreen.storyboard */,
+				773C0D67245050F700840C2B /* Info.plist */,
+			);
+			path = KakaoBankTest;
+			sourceTree = "<group>";
+		};
+		773C0D7224505B1800840C2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				773C0D7324505B3B00840C2B /* SearchResultTableViewCell.swift */,
+				7763ABA9245306170086FBF5 /* RatingStackView.swift */,
+				773C0D7024505A7600840C2B /* ResultViewController.swift */,
+				773C0D5D245050F100840C2B /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		773C0D75245110C100840C2B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				773C0D762451117C00840C2B /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		773C0D7824511D7B00840C2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				773C0D7924511D8800840C2B /* SearchResultModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		773C0D7B245150FD00840C2B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				773C0D7C2451510D00840C2B /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7763ABA62452FFB90086FBF5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				7763ABA72452FFD40086FBF5 /* Parser.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		7763ABAB245319070086FBF5 /* Etc */ = {
+			isa = PBXGroup;
+			children = (
+				773C0D6E24505A4100840C2B /* R.generated.swift */,
+				773C0D59245050F100840C2B /* AppDelegate.swift */,
+				773C0D5B245050F100840C2B /* SceneDelegate.swift */,
+			);
+			path = Etc;
+			sourceTree = "<group>";
+		};
+		DF8C7B627CD1870F46937176 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AB69167CAD055CDD9BBE057 /* Pods_KakaoBankTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		773C0D55245050F100840C2B /* KakaoBankTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 773C0D6A245050F700840C2B /* Build configuration list for PBXNativeTarget "KakaoBankTest" */;
+			buildPhases = (
+				773C0D6D245058CB00840C2B /* R.script */,
+				98552D8BA6E944BD51722028 /* [CP] Check Pods Manifest.lock */,
+				773C0D52245050F100840C2B /* Sources */,
+				773C0D53245050F100840C2B /* Frameworks */,
+				773C0D54245050F100840C2B /* Resources */,
+				1FE43C8D6268EA847E015B14 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KakaoBankTest;
+			productName = KakaoBankTest;
+			productReference = 773C0D56245050F100840C2B /* KakaoBankTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		773C0D4E245050F100840C2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = lge;
+				TargetAttributes = {
+					773C0D55245050F100840C2B = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 773C0D51245050F100840C2B /* Build configuration list for PBXProject "KakaoBankTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 773C0D4D245050F100840C2B;
+			productRefGroup = 773C0D57245050F100840C2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				773C0D55245050F100840C2B /* KakaoBankTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		773C0D54245050F100840C2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773C0D66245050F700840C2B /* LaunchScreen.storyboard in Resources */,
+				773C0D63245050F700840C2B /* Assets.xcassets in Resources */,
+				773C0D61245050F100840C2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FE43C8D6268EA847E015B14 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoBankTest/Pods-KakaoBankTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaoBankTest/Pods-KakaoBankTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaoBankTest/Pods-KakaoBankTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		773C0D6D245058CB00840C2B /* R.script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.script;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
+		98552D8BA6E944BD51722028 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaoBankTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		773C0D52245050F100840C2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				773C0D7A24511D8800840C2B /* SearchResultModel.swift in Sources */,
+				773C0D7D2451510D00840C2B /* ViewModel.swift in Sources */,
+				7763ABA82452FFD40086FBF5 /* Parser.swift in Sources */,
+				773C0D7124505A7600840C2B /* ResultViewController.swift in Sources */,
+				773C0D5E245050F100840C2B /* ViewController.swift in Sources */,
+				773C0D7424505B3B00840C2B /* SearchResultTableViewCell.swift in Sources */,
+				773C0D772451117C00840C2B /* NetworkManager.swift in Sources */,
+				773C0D5A245050F100840C2B /* AppDelegate.swift in Sources */,
+				773C0D5C245050F100840C2B /* SceneDelegate.swift in Sources */,
+				7763ABAA245306170086FBF5 /* RatingStackView.swift in Sources */,
+				773C0D6F24505A4100840C2B /* R.generated.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		773C0D5F245050F100840C2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				773C0D60245050F100840C2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		773C0D64245050F700840C2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				773C0D65245050F700840C2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		773C0D68245050F700840C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		773C0D69245050F700840C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		773C0D6B245050F700840C2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CE3756D41D2EF2FD140DCFC /* Pods-KakaoBankTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SKT5H4CPQ;
+				INFOPLIST_FILE = KakaoBankTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lge.KakaoBankTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		773C0D6C245050F700840C2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4A3F4B1C787BCC7BF6A274B /* Pods-KakaoBankTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SKT5H4CPQ;
+				INFOPLIST_FILE = KakaoBankTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lge.KakaoBankTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		773C0D51245050F100840C2B /* Build configuration list for PBXProject "KakaoBankTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773C0D68245050F700840C2B /* Debug */,
+				773C0D69245050F700840C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		773C0D6A245050F700840C2B /* Build configuration list for PBXNativeTarget "KakaoBankTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				773C0D6B245050F700840C2B /* Debug */,
+				773C0D6C245050F700840C2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 773C0D4E245050F100840C2B /* Project object */;
+}
