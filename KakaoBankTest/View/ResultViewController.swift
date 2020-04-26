@@ -83,9 +83,9 @@ class ResultViewController: UIViewController {
         self.lbCount.text = String(format: "%.1f", result?.averageUserRating ?? 0.0)
         self.ratingStackView.rating(with: result)
 
-        self.lbUpdateDate.text = Parser.getUpdateDate(with: result)
+        self.lbUpdateDate.text = Parser.default.getUpdateDate(with: result)
 
-        self.lbRatingCount.text = (Parser.getRatingCount(with: result) ?? "") + "개의 평가"
+        self.lbRatingCount.text = (Parser.default.getRatingCount(with: result) ?? "") + "개의 평가"
 
         DispatchQueue.global().async { [weak self] in
 
