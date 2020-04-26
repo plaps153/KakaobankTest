@@ -33,7 +33,9 @@ final class SearchResult: Decodable {
     var version: String?
     var userRatingCount: Int?
     var userRatingCountForCurrentVersion: Int?
-
+    
+    var asset: [String:UIImage] = [:]
+    
     convenience init(from decoder: Decoder) throws {
         self.init()
 

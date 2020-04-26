@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         self.title = "검색"
-
+        self.tableView.showsVerticalScrollIndicator = false
+        
         configureSearchBar()
 
         // Bind searchBar with searchedText relay
@@ -44,7 +45,10 @@ class ViewController: UIViewController {
                 self?.model.setSearchedText(with: term)
 
                 return NetworkManager.default.searchRequest(with: term)
-        }.map { $0 as [Any] }
+        }.flatMap { (results) -> Observable<[SearchResult]> in
+            return Parser.getResultAsset(with: results)
+        }
+        .map { $0 as [Any] }
 
         // Bind text search results
         // Search result comes from the 'data'
@@ -66,6 +70,8 @@ class ViewController: UIViewController {
             return $0
         }.flatMap { (term) -> Single<[SearchResult]> in
             return NetworkManager.default.searchRequest(with: term)
+        }.flatMap { (results) -> Observable<[SearchResult]> in
+            return Parser.getResultAsset(with: results)
         }.map { $0 as [Any] }
 
         // Observe all event to show on the tableview
